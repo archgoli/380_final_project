@@ -201,31 +201,33 @@ tw-passage[tags~="argumentfriend"] {
   color: white;}
 
 tw-story[tags~="confidefriend"]{
- background-image:url("https://github.com/archgoli/380_final_project/blob/main/confidefriend.png?raw=true");
+ background-image:url("https://github.com/archgoli/380_final_project/blob/main/confidenewfriend.png?raw=true");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 tw-passage[tags~="confidefriend"] {
-  color: white;}
+  color: black;}
 
 /*ending*/
 
 tw-story[tags~="counselorending"]{
- background-image:url("https://github.com/archgoli/380_final_project/blob/main/counselorending.png?raw=true");
+  
+ background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://github.com/archgoli/380_final_project/blob/main/counselorending.png?raw=true");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 tw-passage[tags~="counselorending"] {
-  color: black;
+  color: white;
 
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="bedroom" color="orange"></tw-tag><tw-tag name="bedtalkbot" color="red"></tw-tag><tw-tag name="dadadvice" color="blue"></tw-tag><tw-tag name="firstday2" color="blue"></tw-tag><tw-tag name="dinnertable" color="green"></tw-tag><tw-tag name="schoolhall" color="red"></tw-tag><tw-tag name="clubfair" color="red"></tw-tag><tw-tag name="sleepover" color="blue"></tw-tag><tw-tag name="cafeteria" color="blue"></tw-tag><tw-tag name="cafesoccer" color="purple"></tw-tag><tw-tag name="cafescroll" color="red"></tw-tag><tw-tag name="cafetalkbot" color="yellow"></tw-tag><tw-tag name="homeworktalkbot" color="blue"></tw-tag><tw-tag name="homeworkfriend" color="yellow"></tw-tag><tw-tag name="homeworkteacher" color="green"></tw-tag><tw-tag name="argumentfriend" color="yellow"></tw-tag><tw-tag name="confidefriend" color="purple"></tw-tag><tw-tag name="counselorending" color="green"></tw-tag><tw-passagedata pid="1" name=" 2ndweek" tags="bedroom" position="325,1375" size="100,100">(text-style:&quot;underline&quot;)[&#39;&#39;&#39;&#39;&#39;&#39;A week passes&#39;&#39;]
-&#39;&#39;Anxiety Score: $anxiety points
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="bedroom" color="orange"></tw-tag><tw-tag name="bedtalkbot" color="red"></tw-tag><tw-tag name="dadadvice" color="blue"></tw-tag><tw-tag name="firstday2" color="blue"></tw-tag><tw-tag name="dinnertable" color="green"></tw-tag><tw-tag name="schoolhall" color="red"></tw-tag><tw-tag name="clubfair" color="red"></tw-tag><tw-tag name="sleepover" color="blue"></tw-tag><tw-tag name="cafeteria" color="blue"></tw-tag><tw-tag name="cafesoccer" color="purple"></tw-tag><tw-tag name="cafescroll" color="red"></tw-tag><tw-tag name="cafetalkbot" color="yellow"></tw-tag><tw-tag name="homeworktalkbot" color="blue"></tw-tag><tw-tag name="homeworkfriend" color="yellow"></tw-tag><tw-tag name="homeworkteacher" color="green"></tw-tag><tw-tag name="argumentfriend" color="yellow"></tw-tag><tw-tag name="confidefriend" color="purple"></tw-tag><tw-tag name="counselorending" color="green"></tw-tag><tw-passagedata pid="1" name=" 2ndweek" tags="bedroom" position="325,1375" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
+&#39;&#39;(text-style:&quot;underline&quot;)[&#39;&#39;&#39;&#39;&#39;&#39;A week passes&#39;&#39;]
+&#39;&#39;
 
 The hallways don’t feel quite as unfamiliar anymore, but everything still feels sad. 
 
@@ -247,7 +249,9 @@ TalkBot:
 //You sigh and lean back in your chair//&#39;&#39;
 
 [[Ask teacher (+3 anxiety) -&gt; teacher]]
+
 [[Ask talkbot -&gt; ask talkbot]]
+
 (if: $madeFriend is true)[[[Ask new friend (+1 anxiety) -&gt; ask friend]]]</tw-passagedata><tw-passagedata pid="2" name=" Advice" tags="dadadvice" position="325,500" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
 
 You say to your dad, “Hey, I&#39;m feeling kinda nervous about my first day of school. I could use some words of advice.”
@@ -258,6 +262,7 @@ Dad:
 // Well that was pointless...//&#39;&#39;
 
 [[Ask talkbot for some reasurance -&gt; Talkbot reasurance]]
+
 [[Go to sleep -&gt; First Day]]</tw-passagedata><tw-passagedata pid="3" name=" Before First Day" tags="bedroom" position="325,375" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
 
 It’s a notification from the chatbot app you downloaded a few nights ago. You don’t remember exactly why, maybe curiosity, maybe boredom, maybe just wanting something to talk to that wouldn’t feel awkward or complicated.
@@ -267,6 +272,7 @@ Downstairs, your parents are still cleaning up from dinner. Tomorrow is coming w
 What do you do?&#39;&#39;
 
 [[Attempt to get advice from your parents -&gt; Advice]]
+
 [[Ask the Talkbot for some quick reasurance -&gt; Talkbot reasurance]]</tw-passagedata><tw-passagedata pid="4" name=" Ending" tags="" position="350,2475" size="100,100">//(this will take some coding. Things like compulsion and made friend will effect little parts of the ending. If you choose to go to the counselor you will. However, whether you delete the talkbot all together, use it occasionally for less personal matter and turn off notifications, or smile while talking to it will change. )
 
 
@@ -381,6 +387,7 @@ Katie:
 
 
 [[Go to counselor-&gt;counselor + friends end]]
+
 [[Don&#39;t go to counselor-&gt;no counselor + friends end]]</tw-passagedata><tw-passagedata pid="8" name=" approach girl" tags="cafesoccer" position="200,1250" size="100,100">(set: $anxiety to $anxiety + 3)
 (set: $confidence to $confidence + 1)
 &#39;&#39;Anxiety Score: $anxiety points
@@ -417,7 +424,7 @@ Katie:
 
 You meet up the next day after school and work for a few hours. Neither of you get the best score but you now have a good study buddy and you feel more comfortable asking for help.&#39;&#39; 
 
-[[Next week -&gt; week3]]</tw-passagedata><tw-passagedata pid="10" name=" ask talkbot" tags="homeworktalkbot" position="200,1500" size="100,100">(set: $botdependency to $botdependency * 2)
+[[Next week -&gt; week3]]</tw-passagedata><tw-passagedata pid="10" name=" ask talkbot" tags="bedtalkbot" position="200,1500" size="100,100">(set: $botdependency to $botdependency * 2)
 
 &#39;&#39;Anxiety Score: $anxiety points
 
@@ -462,7 +469,7 @@ Soccer girl:
 You:
 “Yeah actually I played at my old school, need any more defenders?” 
 
-“We always need more defenders! Well practice is every Mon/Wed/Frid starting next week, tryout are the following Friday…&quot;, soccer girl exclaims, handing you a flyer. Then she leans in and lowers her voice, &quot;I&#39;ll let you in on a little secret -- practically everyone makes it. Hope to see you there!!&#39;&#39;
+“We always need more defenders! Well practice is every Mon/Wed/Frid starting next week, tryout are the following Friday…&quot;, soccer girl exclaims, handing you a flyer. Then she leans in and lowers her voice, &quot;I&#39;ll let you in on a little secret -- practically everyone makes it. Hope to see you there!!&quot;&#39;&#39;
 
 (set: $wenttoclubfair to true)
 [[Next day -&gt; day2]]</tw-passagedata><tw-passagedata pid="13" name=" confide in friend" tags="confidefriend" position="200,2000" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
@@ -484,8 +491,8 @@ Katie:
 Katie:
 “But… can I ask something?”
 
-You glance up.
-
+//You glance up.
+//
 Katie:
 “Do you think maybe this is about more than just the argument?”
 
@@ -494,8 +501,8 @@ Katie:
 Katie:
 “What I mean is… you’ve been carrying a lot since moving here. I don’t think you’re wrong for being hurt. But maybe this hit harder because everything already feels unstable.”
 
-You stare down at your hands, which have started to look a little fuzzy.
-
+//You stare down at your hands, which have started to look a little fuzzy.
+//
 Katie:
 “You don’t have to figure everything out alone, I&#39;m here for you! And our school counserlor is actually really nice. One of my other friends, Stella, I think you might have seen her before, went last year after she fought with her best friend.”
 
@@ -504,6 +511,7 @@ Katie:
 Part of you wants to dismiss it. Part of you wonders if they might be right.&#39;&#39;
 
 [[Accept what she&#39;s saying (-2 confidence) -&gt; accept friend]]
+
 [[Deflect and stay focused on the argument -&gt; deflect]]</tw-passagedata><tw-passagedata pid="14" name=" confide in talkbot" tags="bedtalkbot" position="325,2000" size="100,100">(set: $anxiety to $anxiety - 1)
 (set: $botdependency to $botdependency * 2)
 
@@ -537,6 +545,7 @@ TalkBot:
 “Moving, losing familiarity, and changing friendships can create a lot of emotional strain.”&#39;&#39;
 
 [[Be honest about how overwhelemed you feel -&gt; honest to talkbot]]
+
 [[Stay focused on the argument -&gt; deflect to talkbot]]</tw-passagedata><tw-passagedata pid="15" name=" day2" tags="cafeteria" position="325,1125" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
 
 You walk into the cafeteria again the next day. The room is still loud, packed with clammer. You end up just sitting alone again. 
@@ -554,7 +563,9 @@ Talkbot:
 “Lunch can be one of the hardest parts of a new school. Want help figuring out what to do next?”
 &#39;&#39;
 [[Continue to scroll -&gt; scroll]]
+
 [[Answer Talkbot -&gt; talkbot lunch]]
+
 [[Approach Soccer group (+3 anxiety) -&gt; approach girl]]</tw-passagedata><tw-passagedata pid="16" name=" deflect" tags="confidefriend" position="325,2125" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
 
 //You shake your head//&#39;&#39;
@@ -617,7 +628,7 @@ The hurt softens temporarily.&#39;&#39;
 [[Don&#39;t go to counselor-&gt;no counselor + friends end]]
 ]
 
-(if: not $madeFriend or $botdependency &gt;= 15)[
+(if: $madeFriend is false or $botdependency &gt;= 15)[
 [[Don&#39;t go to counselor-&gt;no counselor/friends end]]
 ]</tw-passagedata><tw-passagedata pid="18" name=" firstday.2" tags="dinnertable" position="325,750" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
 
@@ -627,9 +638,10 @@ Classes end and you take the bus back home, sitting by yourself at the front. At
 
 You contemplate between mentioning the club fair or not. You feel like a bit of friend time is what&#39;s needed but you know the club fair is a once a year opportunity and a good way to talk to other kids at school. 
 
-//Your phone buzzes//  *It&#39;s from talkbot&#39;&#39;
+//Your phone buzzes//  It&#39;s from talkbot&#39;&#39;
 
 [[Tell them about the clubfair (+1 anxiety) -&gt; clubfair]]
+
 [[Ask them about the sleepover (-1 anxiety) -&gt; sleepover]]</tw-passagedata><tw-passagedata pid="19" name=" honest to talkbot" tags="bedtalkbot" position="450,2125" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
 
 You:
@@ -661,7 +673,7 @@ You:
 [[Don&#39;t go to counselor-&gt;no counselor + friends end]]
 ]
 
-(if: $madeFriend not true or $botdependency &gt;= 15 )[
+(if: $madeFriend is false or $botdependency &gt;= 15 )[
 [[Don&#39;t go to counselor-&gt;no counselor/friends end]]
 ]</tw-passagedata><tw-passagedata pid="20" name=" lie at dinner" tags="dinnertable" position="200,1875" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
 
@@ -686,6 +698,7 @@ Mom:
 You keep looking at your plate. You can tell they don’t believe you. You feel worse and wish you told them the truth, but you just wanted to avoid making them worry. You should have gotten over it by now.
 &#39;&#39;
 [[Confide in the talkbot -&gt; confide in talkbot]]
+
 (if: $madeFriend is true)[[[Confide in your new friend-&gt; confide in friend]]]</tw-passagedata><tw-passagedata pid="21" name=" scroll" tags="cafescroll" position="325,1250" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
 
 You text your old friend, hoping she’ll know what to say. 
@@ -701,7 +714,7 @@ Annie:
 Soccer Girl: 
 “Hey new girl! I know lunch is almost over but I wanted to invite you to sit with us tomorrow! I know how moving can suck.” ]
 &#39;&#39;
-(set: $madeFriend to true)]
+(set: $madeFriend to true)
 
 [[Next week -&gt; 2ndweek]]</tw-passagedata><tw-passagedata pid="22" name=" sleepover" tags="dinnertable" position="450,875" size="100,100">(set: $anxiety to $anxiety - 1)
 
@@ -718,11 +731,12 @@ You:
 
 Mom and dad exchange glances, having one of their no-words-needed conversation before they look back at you. Mom says, “Okay sweetie, do you need a ride?” &#39;&#39;
 
-[[Next -&gt; sleepover.2]]</tw-passagedata><tw-passagedata pid="23" name=" sleepover.2" tags="sleepover" position="450,1000" size="100,100">(text-style:&quot;underline&quot;)[&#39;&#39;&#39;&#39;&#39;&#39;You go to the sleepover and have a blast&#39;&#39;&#39;&#39;]
+[[Next -&gt; sleepover.2]]</tw-passagedata><tw-passagedata pid="23" name=" sleepover.2" tags="sleepover" position="450,1000" size="100,100">&#39;&#39;Anxiety Score: $anxiety points&#39;&#39;
+(text-style:&quot;underline&quot;)[&#39;&#39;&#39;&#39;&#39;&#39;You go to the sleepover and have a blast&#39;&#39;]
 
-Anxiety Score: $anxiety points
 
-//I have great friends already, I don&#39;t need to actively search for new ones, that’ll come with time.//&#39;&#39;
+
+//I have great friends already, I don&#39;t need to actively search for new ones, that’ll come with time.//
 
 [[Next day -&gt; day2]]</tw-passagedata><tw-passagedata pid="24" name=" talkbot lunch" tags="cafetalkbot" position="450,1250" size="100,100">&#39;&#39;&#39;&#39;(set: $botdependency to $botdependency * 2)
 
@@ -767,9 +781,9 @@ You keep staring at your screen while the cafeteria noise blurs into the backgro
 (text-style:&quot;underline&quot;)[Before you finish answering the talkbot that girl from the soccer club approaches you]
 
 Soccer Girl: 
-“Hey new girl! I know lunch is almost over but I wanted to invite you to sit with us tomorrow! I know how moving can suck.” ]&#39;&#39;&#39;&#39;&#39;
+“Hey new girl! I know lunch is almost over but I wanted to invite you to sit with us tomorrow! I know how moving can suck.” ]&#39;&#39;
 
-(set: $madeFriend to true)]
+(set: $madeFriend to true)
 
 [[Next week -&gt; 2ndweek]]</tw-passagedata><tw-passagedata pid="25" name=" teacher" tags="homeworkteacher" position="325,1500" size="100,100">(set: $anxiety to $anxiety + 3)
 (set: $confidence to $confidence + 1)
@@ -850,9 +864,11 @@ You stare at your plate again. You nod slightly. But inside, you feel smaller th
 (if: $madefriend and $botdependency &lt; 5 )[
 [[Go to counselor (+1 anxiety points) -&gt;counselor + friends end]]
 ]
+
 (if: $madefriend and $botdependency &gt;= 5 and $botdependency &lt; 15 )[
 [[Go to counselor (+3 anxiety points) -&gt;counselor + friends end]]
 ]
+
 [[See what the talkbot thinks (-1 anxiety) -&gt; confide in talkbot]]
 (if: $madefriend is true)[[[Confide in your new friend-&gt; confide in friend]]]</tw-passagedata><tw-passagedata pid="27" name=" week3" tags="argumentfriend" position="200,1625" size="100,100">&#39;&#39;Anxiety Score: $anxiety points
 
@@ -918,6 +934,7 @@ Dad:
 “Honey, if you don&#39;t tell us we can&#39;t help you.&quot;&#39;&#39;
 
 [[Lie -&gt; lie at dinner]]
+
 [[Tell them what happened (+2 anxiety) -&gt; truth at dinner]]</tw-passagedata><tw-passagedata pid="29" name="Background" tags="Background bedroom bedroomtext" position="325,250" size="100,100">(set: $anxiety to 0)
 (set: $confidence to 0)
 (set: $botdependency to 0)
